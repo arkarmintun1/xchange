@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import  "./pages/timeline.dart";
+import "./pages/timeline.dart";
+import "./pages/friends.dart";
 
 void main() => runApp(MyApp());
 
@@ -44,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
         body: TabBarView(
           children: <Widget>[
             TimelinePage(),
-            Tab(icon: Icon(Icons.group)),
+            FriendsPage(),
             Tab(icon: Icon(Icons.notifications)),
           ],
         ),
